@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Imprenta de libros</title>
+    <title>Directorio empresarial</title>
     <style>
         .formularios {
-            border: 2px solid #ccc;
+            border: 3px solid #ccc;
             border-radius: 5px;
             padding: 10px;
             background: #eee;
@@ -30,6 +31,7 @@
     <div id="contenedorPrincipal">
 
         <div id="contenedorContenido">
+
             <div class="formularios">
 
                 <form method="POST" action="registro.php">
@@ -47,8 +49,8 @@
                         <label>Genero</label>
                         <select name="genero" id="genero">
                             <option value="0">Genero...</option>
-                            <option value="1">Hombre</option>
-                            <option value="2">Mujer</option>
+                            <option value="Hombre">Hombre</option>
+                            <option value="Mujer">Mujer</option>
 
                         </select>
                     </div>
@@ -67,6 +69,8 @@
 
 
     <?php
+
+   
     if (!isset($_SESSION)) {
         session_start(); //iniciar la sesion
     }
