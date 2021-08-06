@@ -10,8 +10,8 @@ $mensajeError = '';
 $isFalta = false;
 
 if (
-    !isset($_GET['nombre'], $_GET['correo'],$_GET['genero']) ||
-    empty($_GET['nombre']) || empty($_GET['correo']) || empty($_GET['genero'])
+    !isset($_POST['nombre'], $_POST['correo'],$_POST['genero']) ||
+    empty($_POST['nombre']) || empty($_POST['correo']) || empty($_POST['genero'])
 ) {
     $mensajeError = 'Faltan datos de ingresar <br/>';
     $isFalta = true;
@@ -26,11 +26,11 @@ empty($mensajeError); // true
 
 
 
-$nombre = (isset($_GET['nombre'])) ? $_GET['nombre'] : '';
+$nombre = (isset($_POST['nombre'])) ? $_POST['nombre'] : '';
 
-$correo = (isset($_GET['correo'])) ? $_GET['correo'] : '';
+$correo = (isset($_POST['correo'])) ? $_POST['correo'] : '';
 
-$genero = (isset($_GET['genero'])) ? $_GET['genero'] : '';
+$genero = (isset($_POST['genero'])) ? $_POST['genero'] : '';
 
 
 if (!$isFalta) {

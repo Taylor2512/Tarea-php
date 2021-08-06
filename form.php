@@ -32,7 +32,7 @@
         <div id="contenedorContenido">
             <div class="formularios">
 
-                <form method="get" action="registro.php">
+                <form method="POST" action="registro.php">
                     <h4 style="text-align:center">Directorio empresarial</h4>
                     <div class="formItem">
                         <label>Nombre :</label>
