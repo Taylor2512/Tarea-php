@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Imprenta de libros</title>
     <title>Directorio empresarial</title>
     <style>
         .formularios {
